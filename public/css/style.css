@@ -6,7 +6,7 @@ body {}
 
 /* header */
 header {
-    background: #ffffff;
+    background: #000000;
     color: red;
 }
 
@@ -23,4 +23,63 @@ header {
 #side-bar {
     flex: 0 0 19%;
     border-left: 1px solid #727272;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+
+    color: #ffffff;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#menu-arrow {
+    margin-left: 8px;
+}
+
+#accordion-menu {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 45px;
+
+    width: 180px;
+
+    background: #ffffff;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    border: 1px solid #ddd;
+}
+
+#accordion-menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+#accordion-menu li a,
+.logout-btn {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px;
+
+    color: #000000;
+    text-decoration: none;
+
+    background: #ffffff;
+    border: none;
+
+    cursor: pointer;
+    text-align: left;
+}
+
+#accordion-menu li a:hover,
+.logout-btn:hover {
+    background: #f5f5f5;
 }
